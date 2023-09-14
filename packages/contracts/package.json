@@ -1,0 +1,23 @@
+{
+  "name": "@rei-network/contracts",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "npx hardhat compile && tsc",
+    "node": "npx hardhat node",
+    "test": "npx hardhat test",
+    "docgen": "solidity-docgen -i ./src -t ./templates -H ./helper.js",
+    "clean:build": "rm -rf ./artifacts ./cache ./deployments ./docs ./types"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "3.2.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@types/chai": "^4.2.21",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.5",
+    "solidity-docgen": "^0.5.13"
+  }
+}
