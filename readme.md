@@ -2,7 +2,7 @@
 npm i
 
 ```sh
-npx ts-node main.ts
+npx ts-node main.ts "@rei-network/common"  "@rei-network/bls"
 ```
 
 or
